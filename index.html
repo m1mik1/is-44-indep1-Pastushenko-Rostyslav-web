@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Відпрацювання прикладів з HTML форм</title>
+</head>
+<body>
+
+  <h1>HTML Форма – Базовий приклад</h1>
+  <form action="">
+    <label for="fname">Ім'я:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Прізвище:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Відправити">
+  </form>
+
+  <hr>
+
+  <h2>Атрибути форми</h2>
+  <form action="/дія" method="post" target="_blank" autocomplete="on">
+    <label>Email:</label>
+    <input type="email" name="email"><br><br>
+    <label>Пароль:</label>
+    <input type="password" name="pass"><br><br>
+    <input type="submit" value="Увійти">
+  </form>
+
+  <hr>
+
+  <h2>Елементи форми</h2>
+  <form>
+    <p>Вибери стать:</p>
+    <input type="radio" id="male" name="gender" value="чоловіча">
+    <label for="male">Чоловіча</label><br>
+    <input type="radio" id="female" name="gender" value="жіноча">
+    <label for="female">Жіноча</label><br><br>
+
+    <p>Хобі:</p>
+    <input type="checkbox" id="sport" name="hobby" value="Спорт">
+    <label for="sport">Спорт</label><br>
+    <input type="checkbox" id="music" name="hobby" value="Музика">
+    <label for="music">Музика</label><br>
+    <input type="checkbox" id="reading" name="hobby" value="Читання">
+    <label for="reading">Читання</label><br><br>
+
+    <label for="birthday">Дата народження:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <label for="cars">Оберіть авто:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="bmw">BMW</option>
+      <option value="audi">Audi</option>
+    </select><br><br>
+
+    <label for="message">Повідомлення:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Надіслати">
+  </form>
+
+  <hr>
+
+  <h2>Типи вводу</h2>
+  <form>
+    <label>Текст:</label> <input type="text"><br><br>
+    <label>Число:</label> <input type="number"><br><br>
+    <label>Телефон:</label> <input type="tel"><br><br>
+    <label>Колір:</label> <input type="color"><br><br>
+    <label>Файл:</label> <input type="file"><br><br>
+    <label>Діапазон:</label> <input type="range" min="0" max="10"><br><br>
+    <label>Час:</label> <input type="time"><br><br>
+    <label>URL:</label> <input type="url"><br><br>
+    <label>Пошук:</label> <input type="search"><br><br>
+    <input type="submit" value="Відправити">
+  </form>
+
+  <hr>
+
+  <h2>Атрибути вводу</h2>
+  <form>
+    <label>Обов'язкове поле:</label>
+    <input type="text" required><br><br>
+
+    <label>Максимум 10 символів:</label>
+    <input type="text" maxlength="10"><br><br>
+
+    <label>Тільки для читання:</label>
+    <input type="text" value="не змінюється" readonly><br><br>
+
+    <label>З підказкою:</label>
+    <input type="text" placeholder="Введіть щось"><br><br>
+
+    <input type="submit" value="OK">
+  </form>
+
+  <hr>
+
+  <h2>Приклад з атрибутом form</h2>
+  <form id="regForm">
+    <input type="text" name="username">
+  </form>
+  <button type="submit" form="regForm">Надіслати форму</button>
+
+  <hr>
+
+  <h2>Відпрацювання HTML Основ </h2>
+  <p>Абзац тексту</p>
+  <a href="https://github.com/m1mik1/is-44-indep1-Pastushenko-Rostyslav-web">Посилання на цей репозиторій</a><br><br>
+  <p>Картинка:</p>
+  <img src="https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/66b3e5760608f3f68cb0b04b_93.png" alt="смайл" width="200"><br><br>
+  <button>Кнопка</button>
+  <p>Впорядкованні списки:</p>
+  <ol>
+    <li>перший</li>
+    <li>другий</li>
+    <li>третій</li>
+  </ol>
+  <p>Невпорядкованні списки:</p>
+  <ul>
+    <li>перший</li>
+    <li>другий</li>
+    <li>3</li>
+  </ul>
+</body>
+</html>
